@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <figure>
+                <img src="/Talk more.jfif" alt="logo">
+            </figure>
+            
+            <ul type="none" class="ul">
+                
+                <li class="li"><a href="">Home</a></li>
+                <li class="li"><a href="./about.html">About</a></li>
+                <li class="li"><a href="./service.html">Service</a></li>
+                <li class="li"><a href="">Contact</a></li>
+            </ul>
+            <a href="signup.html" class="log">Login</a>
+            
+
+        </nav>
+        <main>
+            <aside>
+                <h3>Blogs</h3>
+                <h4>Yahoo mail</h4>
+                <!-- <h2>yahoo mail</h2> -->
+               <p>
+                Yahoo! Mail is an email service launched on October 8, 1997, 
+                by the American company Yahoo, Inc. The service is free for personal use, 
+                with an optional monthly fee for additional features.
+                 Business email was previously available with the Yahoo!
+               </p>
+               <p></p>
+               <h4>Market</h4>
+               <p>
+                NGX Group releases dividend policy
+Iheanyi Nwachukwu  Sep 15, 2022 0
+Nigerian Exchange Group (NGX Group) Plc has released its dividend policy in ensuring that shareholders received returns on their investments. The policy document which was approved by the…
+               </p>
+
+            </aside>
+            <section>
+                <h3>TALKMORE</h3><marquee behavior="" direction="Right">talkmore connect with loved ones</marquee>
+                <video src="/Black - 13495.mp4" width="540" autoplay loop></video>
+            </section>
+
+        </main>
+        <div>
+            <footer>
+                <div id="end">
+                    <div class="Newsletter">
+                        <h3>Newsletter</h3>
+                        <input type="text" placeholder="enter a feedback">
+    
+                    </div>
+                    <div class="quicklinls">
+                        <h3>Quicklinks</h3>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./service.html">Service</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                   </div>
+                   <div id="Right">
+                    <address>
+                     <li><a href="">Contact</a></li>
+                        2, oweh street jibowu yaba
+                    </address>
+
+                </div>
+               </div>
+             
+            </footer>
+        </div>
+
+    </div>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .ul{
+            display: flex;
+          
+           
+        }
+        .li{
+            margin-left: 2em;
+        }
+        .li a{
+              text-decoration: none;
+              color: black;
+        }
+        .log{
+            text-decoration: none;
+            color: black;
+            border: .2em ridge peru;
+            background-color: blue
+        }
+        li:hover a{
+            color: black; 
+            background-color: darkgoldenrod;
+        }
+        .log:hover{
+            transition: all 25s linear;
+            color: yellow;
+            transform: scale(0.5);
+        }
+        aside{
+            background-color: gray;
+            width: 40vw;
+        }
+        section{
+            width: 50vw;
+            
+        }
+        main{
+            display: flex;
+            height: 100vh;
+           justify-content: space-between;
+          
+        }
+        #end{
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* @media (min-width:360px),(min-height:640px){
+            
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            
+        } */
+        .ul{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+          
+           
+        }
+        .li{
+            margin-left: 2em;
+        }
+        #end{
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start
+        }
+        main{
+            display: flex;
+            height: 100vh;
+          
+        }
+    
+        
+       
+        
+    </style>
+    
+</body>
+</html>

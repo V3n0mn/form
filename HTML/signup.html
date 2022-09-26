@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up form</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <figure>
+                <img src="/Talk more.jfif" alt="logo">
+            </figure>
+            
+            <ul type="none" class="ul">
+                
+                <li class="li"><a href="./index.html">Home</a></li>
+                <li class="li"><a href="./about.html">About</a></li>
+                <li class="li"><a href="./service.html">Service</a></li>
+                <li class="li"><a href="">Contact</a></li>
+            </ul>
+            <a href="#" class="log">Login</a>
+
+        </nav>
+        <div id="formWrapper">
+            <div class="content">
+                <img src="../mashup.jfif" alt="">
+
+            </div>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>profile</legend>
+                    <div class="Name">
+                        <input type="text" name="name" placeholder="enter your username" minlength="5" maxlength="10">
+                        <input type="text" name="name" placeholder="enter your surname">
+    
+                    </div>
+                    <div class="password" value="">
+                        <input type="password" placeholder="enter your password" pattern="[0-9"{4} minlength="6" maxlength="10">
+                        <input type="password" placeholder="confirm pwd">
+    
+                        <div class="Gender">
+                            <!-- <select name="" id=""> -->
+                                <!-- <option value="">Male</option> -->
+                                <!-- <option value="">Female</option> -->
+                                <!-- <option value="">Custom</option> -->
+
+                                <label for="male">Male:<input type="radio" name="select"></label>
+                                <label for="female">Female:<input type="radio" name="select"></label>
+                                <label for="Custom">Custom:<input type="radio" name="select"></label>
+                            </select>
+                        
+                        </div>
+                        <div class="file">
+                            <h2>Upload ImageV</h2>
+                            <input type="File">
+                        </div>
+    
+                    </div>
+                    <input type="submit">
+                    <!-- <button type="submit">submit</button> -->
+                    
+                </fieldset>
+                
+    
+            </form>
+                
+       
+       
+        </div>
+           
+    </div>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        #container{
+            background-color: grey;
+            height: 100vh;
+        }
+        nav{
+            background-color: brown;
+            display: flex;
+            justify-content:space-between
+            
+        }
+        .ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .li{
+            margin-left: 2em;
+        }
+        fieldset{
+            background-color: blue;
+            color: aliceblue;
+            width: 40vw;
+            /*height: 80vh;*/
+            border: 2em;
+            padding: 2em;
+        
+         
+        }
+        #formWrapper{
+            display: flex;
+            justify-content: space-between;
+
+        
+
+            }
+            
+            .name{
+                display: flex;
+                gap: 2em;
+                margin-bottom: 2em;
+            }
+
+            input[type="text"], input[type="password"], input[type="gender"]{
+                padding: .5em;
+
+            }
+            .password{
+        display: flex;
+        flex-direction: column;
+       gap: 1em;
+       }
+       input[tpye="gender"]{
+        display: flex;
+        justify-content: space-between;
+       }
+        @media(width:414px),(height:896px){
+            nav{
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+        .ul{
+            display: flex;
+            flex-direction: column;
+           
+
+        }
+        #formWrapper{
+            display: flex; 
+            flex-direction: column;
+            margin: 0;
+        
+            }
+            fieldset{
+            width: 10vw;
+            /*height: 80vh;*/
+            border-radius: 5em;
+            padding: 2em;
+
+        
+         
+        }
+        .name{
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                margin-bottom: 2em;
+            }
+
+
+
+           
+
+            }
+
+            
+                  
+       
+       
+       
+            
+        
+        
+
+        
+        
+        
+    </style>
+</body>
+</html>

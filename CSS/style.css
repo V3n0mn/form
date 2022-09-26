@@ -1,0 +1,25 @@
+*{box-sizing: border-box;
+
+}
+body { 
+    background-color: beige;
+    border-radius: 5px ;
+    box-shadow: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+} 
+.container {
+    background-color: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100px;
+
+}
+
+    
+
+    
